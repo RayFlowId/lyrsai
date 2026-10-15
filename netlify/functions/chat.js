@@ -50,7 +50,7 @@ exports.handler = async function (event) {
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          model: process.env.INTERN_AI_MODEL || "intern-latest",
+          model: process.env.INTERN_AI_MODEL || "deepseek-v4-flash-0731",
           messages: body.messages.map((message) => ({
             role: message.role,
             content: String(message.content ?? "")
