@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#09090b">
+<title>Lyrs AI — Your AI space</title><meta name="description" content="Lyrs AI — ruang ngobrol AI pribadi.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+<a class="brand" href="#"><span class="brand-mark">L</span><span>Lyrs <b>AI</b></span></a>
+<button id="newChat" class="new-chat"><span>＋</span> Chat baru</button>
+<div class="side-label">RUANG KAMU</div><div id="history" class="history-list"></div>
+<div class="sidebar-bottom"><div class="status-dot"></div><span>AI workspace</span><span class="version">BETA</span></div>
+</aside>
+<main class="main">
+<header class="topbar"><button id="menuToggle" class="icon-button menu-toggle" aria-label="Buka menu">☰</button><div class="top-model"><span class="online-dot"></span><span id="currentModel">Menghubungkan...</span><span class="chevron">⌄</span></div><button id="clearChat" class="icon-button" title="Hapus chat ini" aria-label="Hapus chat">⌫</button></header>
+<section class="chat-area" id="chatArea">
+<div class="welcome" id="welcome"><div class="welcome-symbol"><span>L</span><i></i></div><p class="eyebrow">YOUR PERSONAL AI SPACE</p><h1>Halo, Rayy<span>.</span><br><em>Mau bikin apa hari ini?</em></h1><p class="welcome-sub">Tanya apa saja, cari ide, atau mulai sesuatu yang baru.</p>
+<div class="suggestions">
+<button class="suggestion" data-prompt="Bantu aku mencari ide project web yang unik dan realistis untuk dibuat."><span>✳</span><b>Cari ide project</b><small>Mulai dari ide sederhana</small></button>
+<button class="suggestion" data-prompt="Jelaskan konsep yang sulit dengan bahasa sederhana dan contoh."><span>⌘</span><b>Jelaskan sesuatu</b><small>Belajar tanpa ribet</small></button>
+<button class="suggestion" data-prompt="Bantu aku menulis kode HTML, CSS, dan JavaScript yang rapi."><span>⟨/⟩</span><b>Bantu coding</b><small>Bangun sesuatu bersama</small></button>
+<button class="suggestion" data-prompt="Bantu aku menyusun tulisan yang natural, jelas, dan enak dibaca."><span>✎</span><b>Tulis sesuatu</b><small>Ubah ide jadi kata-kata</small></button>
+</div></div><div id="messages" class="messages" aria-live="polite"></div>
+</section>
+<footer class="composer-wrap"><form id="chatForm" class="composer"><textarea id="prompt" rows="1" placeholder="Tulis pesan ke Lyrs AI..." aria-label="Pesan untuk AI"></textarea><div class="composer-bottom"><div class="composer-hint"><span class="sparkle">✦</span> Lyrs AI bisa membuat kesalahan. Periksa informasi penting.</div><button id="sendButton" class="send-button" type="submit" aria-label="Kirim pesan"><span>↑</span></button></div></form><div class="footer-note">Made for curious minds <span>·</span> Lyrs AI</div></footer>
+</main></div><div id="toast" class="toast"></div><script src="/app.js"></script>
+</body></html>
