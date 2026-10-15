@@ -1,7 +1,6 @@
-# Lyrs AI — Netlify Edition
+# Lyrs AI — PROJECT 
 
-## Deploy lewat halaman konfigurasi Netlify yang kamu buka
-Pastikan isi repo seperti ini:
+## FILE
 - `index.html`
 - `style.css`
 - `app.js`
@@ -9,15 +8,15 @@ Pastikan isi repo seperti ini:
 - `netlify/functions/chat.js`
 - `netlify/functions/models.js`
 
-Isi pengaturan deploy:
+## DEPLOY
 - Branch to deploy: `main`
 - Base directory: kosong
 - Build command: kosong
 - Publish directory: `.`
 - Functions directory: `netlify/functions`
 
-## Tambahkan API key
-Setelah site dibuat, buka Site configuration (atau Project configuration) → Environment variables, lalu tambahkan:
+## API KEY
+ → Environment variables, lalu tambahkan:
 - Key: `INTERN_AI_API_KEY`
 - Value: API key dari dashboard Intern AI Discovery.
 
